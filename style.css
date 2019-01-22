@@ -9,22 +9,41 @@
     line-height:inherit;
     color:inherit;
   }
+
+/*Font and text formatting for body*/
   html, body{
 
     font-family: "Helvetica Neue", Helvetica, sans-serif;
     font-size: 18px;
     line-height: 30px;
-    color:444;
+    color:#444;
     text-shadow: 1px 1px 0px #fff;
   }
+/*Align body center*/
   body{
     text-align: center;    
   }
+
+/*h1 header options*/
   h1{
     font-size: 36px;
     line-height: 50px;
     font-weight: bold;
   } 
+
+  h2{
+    font-size: 24px;
+    line-height: 40px;
+    font-weight: bold;
+  }
+
+/*links*/
+  a{
+    color:#58b;
+  }
+  a:hover{
+    color:#369;
+  }
   
   section{
     border-top: 2px dashed #eee;
@@ -32,7 +51,7 @@
     max-width: 800px;
     margin:0 auto;
   }
-
+/*image section*/
   .hero{
     height: 100vh;
     display:flex;
@@ -53,18 +72,29 @@
     margin-left: auto;
     margin-right:auto;
     transition:transform 1s, box-shadow 1s;
-    background-image:url("Dustin1.jpg");
+    background-image:url("Images\Dustin1.jpg");
     background-size:contain;
   }
+
   .headshot:hover{
     transform:rotate(360deg);
     box-shadow: 0px 0px 100px 50px #fc0
                 0px 0px 100px 20px #960 inset;
   }
+
   .headshot img{
     transition:opacity 1s;
   }
+  
   .headshot:hover img{
     opacity: 0;
   }
   
+  .list li{
+    display:inline;
+    font-weight: bold;
+  }
+
+  .list li:not(:last-child):after{
+    content: ", ";
+  }
