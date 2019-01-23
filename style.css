@@ -5,6 +5,7 @@
     font-size:inherit;
     font-weight:inherit;
     font-family:inherit;
+    font-style:inherit;
     text-decoration:inherit;
     line-height:inherit;
     color:inherit;
@@ -51,6 +52,13 @@
     max-width: 800px;
     margin:0 auto;
   }
+
+/*ContactInfo*/
+  address{
+    white-space: pre-line;
+    margin-bottom: 20px;
+  }
+
 /*image section*/
   .hero{
     height: 100vh;
@@ -72,7 +80,7 @@
     margin-left: auto;
     margin-right:auto;
     transition:transform 1s, box-shadow 1s;
-    background-image:url("Images\Dustin1.jpg");
+    background-image:url("Images\\Dustin1.jpg");
     background-size:contain;
   }
 
@@ -93,9 +101,6 @@
   .list li{
     display:inline;
     font-weight: bold;
-    border-style: solid;
-    border-width: 20px;
-    border-color:#fff #eee;
   }
 
   .list li:not(:last-child):after{
@@ -106,6 +111,11 @@
   .blocklist > li{
     display: flex;
     justify-content: center;
+    border-style: solid;
+    border-width: 20px;
+    border-color: #eee;
+    border-top-color: #fff;
+    border-bottom-color: #fff;
   }
 
   .blocklist > li > div{
@@ -114,7 +124,8 @@
   }
 
   .blocklist > li > img{
-    width: 150px, 150;
+    width: 150px;
+    height: 150px;
     margin: 0 10px;
   }
 
@@ -128,4 +139,32 @@
     flex-direction: row-reverse;
     text-align: right;
     border-right-width: 0px;
+  }
+
+  .prose{
+    text-align: justify;
+    max-width: 500px;
+    margin:0 auto;
+  }
+
+  .prose p,
+  .prose ul{
+    margin:20px 0;
+  }
+
+  .prose li{
+    list-style-position: inside;
+  }
+
+  .prose h1{
+    text-align: center;
+  }
+
+  .prose h2{
+    text-align: center;
+  }
+
+  .prose h3{
+    font-weight: bold;
+    text-align: center;
   }
