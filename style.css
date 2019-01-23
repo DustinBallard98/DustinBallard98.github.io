@@ -93,8 +93,39 @@
   .list li{
     display:inline;
     font-weight: bold;
+    border-style: solid;
+    border-width: 20px;
+    border-color:#fff #eee;
   }
 
   .list li:not(:last-child):after{
     content: ", ";
+  }
+
+/*Projects!!!!*/
+  .blocklist > li{
+    display: flex;
+    justify-content: center;
+  }
+
+  .blocklist > li > div{
+    flex-grow: 1;
+    align-self: center;
+  }
+
+  .blocklist > li > img{
+    width: 150px, 150;
+    margin: 0 10px;
+  }
+
+  .blocklist >li:nth-child(odd){
+    flex-direction: row;
+    text-align: left;
+    border-left-width: 0px;
+  }
+
+  .blocklist > li:nth-child(even){
+    flex-direction: row-reverse;
+    text-align: right;
+    border-right-width: 0px;
   }
