@@ -80,8 +80,8 @@
     margin-left: auto;
     margin-right:auto;
     transition:transform 1s, box-shadow 1s;
-    background-image:url("Images\\Dustin1.jpg");
-    background-size:contain;
+    /*background-image:url("Images\\Dustin1.jpg");
+    background-size:contain;*/
   }
 
   .headshot:hover{
